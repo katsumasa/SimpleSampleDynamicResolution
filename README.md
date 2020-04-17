@@ -26,3 +26,5 @@ ScalableBufferManager.ResizeBuffers()を実行するだけで上記でチェッ�
 詳しくは下記のドキュメントを参考にして下さい。
 参考URL
 https://docs.unity3d.com/ja/2018.4/Manual/DynamicResolution.html
+
+ユニティちゃんのモデルは含まれていませんので、必要な場合はAssetsStoreから取得してください。
