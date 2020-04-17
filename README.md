@@ -14,6 +14,11 @@ UnityEditor上では動作しませんのでご注意下さい。
 - Nintendo Switch
 - iOS/tvOS (Metal のみ)
 - Android (Vulkan のみ)
+### 注意事項
+Unity2019.3のマニュアルではWindows Standaolneでもサポートしているという記述がありますが、調査した所下記の制限がありますのでご注意下さい。
+- Graphic API には`DirectX 12`を指定する必要がある。
+- 起動時オプションに`-force-d3d12-stablepowerstate`を追加する必要がある。
+- FrameTimingManagerには未対応。(2020.1以降で対応予定ではあるが2020.1.0b5の時点では未完成)
 
 ## 補足
 Player 設定 (Edit> Project Settings から Player カテゴリを選択) を開き、Enable Frame Timing Stats チェックボックスをチェックを入れた上で、CameraのallowDynamicResolution及びRenderTextureのuseDynamicScaleがtrueのものが対象です。
