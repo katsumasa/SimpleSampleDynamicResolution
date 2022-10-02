@@ -39,7 +39,7 @@ namespace UTJ
                 // MainCameraの前にレンダリング
                 // renderTextureCamera.depth = mainCamera.depth - 1;
                 // RenderCameraのレンダリング対象(UI以外は全てレンダリング)
-                renderTextureCamera.cullingMask = ~(1 << LayerMask.NameToLayer("UI"));
+                renderTextureCamera.cullingMask &= ~(1 << LayerMask.NameToLayer("UI"));
             }
 
             if (mainCamera)
